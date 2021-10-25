@@ -6,8 +6,10 @@ import GalleriesPage from './pages/GalleriesPage/GalleriesPage.jsx';
 export default function App() {
   return(
     <BrowserRouter>
-        <Route exact path="/" component={ LandingPage }/>
-        <Route path="/galleries" component={ GalleriesPage }/>
+      <>
+        <Route exact path="/" component={LandingPage}/>
+        <Route path="/galleries" component={GalleriesPage}/>
+      </>
     </BrowserRouter>  
   );
 }
