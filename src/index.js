@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom'; 
-import HelloWorld from './components/HelloWorld/HelloWorld.jsx';
+import App from './components/App/App.jsx';
 
 ReactDOM.render(
-  <HelloWorld 
-    name="Konrad"
-    message="Have fun!"
-  />, 
+  <App name="Konrad" message="hello"/>, 
   document.getElementById('root')
 );
