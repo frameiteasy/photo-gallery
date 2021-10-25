@@ -1,7 +1,8 @@
 import React from 'react';
+import HelloWorld from '../../components/HelloWorld/HelloWorld';
 
 const AboutPage = () => (
-  <p>This is a About Page</p>
+  <HelloWorld/>
 );
 
 export default AboutPage;
