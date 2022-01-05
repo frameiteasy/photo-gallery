@@ -1,0 +1,11 @@
+.photoTile__wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.photoTile__image {
+    width: 150px;
+    height: 150px;
+}
