@@ -1,6 +1,7 @@
-import Reac from 'react';
+import React from 'react';
+// import "./photoTile.css";
 
-const PhotoTile = ({photo, title, description}) => {
+function PhotoTile({photo, title, description}) {
     return(
         <div>
             <h3>{title}</h3>
