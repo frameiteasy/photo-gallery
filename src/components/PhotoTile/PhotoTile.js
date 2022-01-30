@@ -1,9 +1,9 @@
 import React from 'react';
-// import "./photoTile.css";
+import "./photoTile.css";
 
 function PhotoTile({photo, title, description}) {
     return(
-        <div>
+        <div className="photoTile__wrapper">
             <h3>{title}</h3>
             <h4>{photo}</h4>
             <p>{description}</p>
