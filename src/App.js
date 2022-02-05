@@ -1,7 +1,10 @@
 import React from 'react';
 import PhotoTile from './components/PhotoTile/PhotoTile.js';
+import { getAlbums } from './util/getAlbums.js';
 
-const App = () => (
+const App = () => {
+    const x = getAlbums();
+    return (
     <>
         <div classNmae="wrapper">
             <h1 className="mainHeader"> Portfolio</h1>
@@ -10,6 +13,6 @@ const App = () => (
         </div>
         
     </>
-);
+)};
 
 export default App;
