@@ -1,0 +1,16 @@
+$color: aquamarine;
+
+.photoTile__wrapper {
+  padding: 0;
+  margin: 0;
+  display: display-box;
+  align-items: center;
+  background-color: $color;
+  width: 300px;
+  height: 300px;
+}
+
+.photoTile__image {
+  width: 150px;
+  height: 150px;
+}

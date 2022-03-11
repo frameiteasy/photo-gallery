@@ -1,5 +1,5 @@
 import React from 'react';
-import "./photoTile.css";
+import "./photoTile.scss";
 
 function PhotoTile({photo, title, description}) {
     return(
