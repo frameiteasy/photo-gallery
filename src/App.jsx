@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoTile from './components/PhotoTile/PhotoTile.js';
+import PhotoTile from './components/PhotoTile/PhotoTile.jsx';
 import "./index.scss";
 
 const App = () => {
