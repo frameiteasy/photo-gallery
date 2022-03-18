@@ -1,16 +1,18 @@
 $color: aquamarine;
 
 .photoTile__wrapper {
-  padding: 0;
-  margin: 0;
+  padding: 20px;
+  margin: 10px;
   display: display-box;
   align-items: center;
   background-color: $color;
-  width: 300px;
+  width: 340px;
   height: 300px;
 }
 
 .photoTile__image {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
+  border: 1px;
+  background-color: 333;
 }
