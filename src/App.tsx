@@ -3,12 +3,14 @@ import './App.scss';
 import getPhotos from './data/photos';
 import PhotoTile from './components/PhotoTile/PhotoTile';
 import { Photo } from './gtypes/photo';
+import Navbar from './components/NavBar/Navbar';
 
 const photos: Photo[] = getPhotos();
 
 function App() {
   return (
     <>
+    <Navbar />
       <h1 className="mainHeader"> Portfolio</h1>
       <h2 className="secondaryHeader">Konrad Marciniak</h2>       
       <div className="container">
