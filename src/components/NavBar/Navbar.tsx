@@ -1,22 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./navbar.scss";
 
 const Navbar: React.FC = () => {
     return(
         <nav className='nav'>
-            <a href='/' className='navbar__site-title'>Josef Chilersa Photography</a>
+            <Link to='/' className='navbar__site-title'>Josef Chilersa Photography</Link>
             <ul>
                 <li>
-                    <a href='/home' className='active'>Home</a>
+                    <Link to='/home' className='active'>Home</Link>
                 </li>
                 <li>
-                    <a href='/albums'>Albums</a>
+                    <Link to='/albums'>Albums</Link>
                 </li>
                 <li>
-                    <a href='/contact'>Contact</a>
+                    <Link to='/contact'>Contact</Link>
                 </li>
                 <li>
-                    <a href='/about'>About</a>
+                    <Link to='/about'>About</Link>
                 </li>
             </ul>
         </nav>
