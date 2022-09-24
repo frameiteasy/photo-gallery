@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
             <Link to='/' className='navbar__site-title'>Josef Chilersa Photography</Link>
             <ul>
                 <li>
-                    <Link to='/home' className='active'>Home</Link>
+                    <Link to='/' className='active'>Home</Link>
                 </li>
                 <li>
                     <Link to='/albums'>Albums</Link>
