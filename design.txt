@@ -1,0 +1,31 @@
+== Home ==
+Strona zawiera jedno, duze zdjęcie na całą stronę.
+Mozna pokusić się o to, zeby to było kilka zdjęć, które się zmieniają co parę sekund.
+Na środku półprzezroczysty przycisk do jednego z albumów:
+- najnowszego
+- najlepszego
+- losowego
+
+== Albums ==
+Kafelki z albumami.
+Po kliknięciu na album otwiera się album, czyli:
+- pierwsze duze zdjęcie z albumu
+- kursorami (myszką) przeglądamy zdjęcia z albumu
+- pasek z miniaturami zdjęć: po kliknięciu na zdjęcie zdjęcie zostaje powiększone
+- czy album powinien mieć kategorię? mozliwość filtrowania po kategoriach
+- czy album powinien mieć słowa kluczowe? moliwośc filtrowania po słowach kluczowych
+
+
+== Contact ==
+formularz kontaktowy
+
+== About ==
+???
+
+== Login ==
+Logowanie do serwisu.
+Generalnie chodzi o to, zeby:
+- mozna było tworzyć albumy publiczne dostępne bez logowania
+- mozna było tworzyć albumy prywatne - dostęp po zalogowaniu
+- co z interfejsem do tworzenia uzytkowników? ról? moze jest jakis serwis do tego (darmowy) - jeśli nie ma, to warto moze stworzyc taki serwis - niezaleznie? 
+- w pierwszej wersji są tylko albumy publiczne

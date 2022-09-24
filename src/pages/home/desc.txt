@@ -1,6 +1,0 @@
-Strona zawiera jedno, duze zdjęcie na całą stronę.
-Mozna pokusić się o to, zeby to było kilka zdjęć, które się zmieniają co parę sekund.
-Na środku półprzezroczysty przycisk do jednego z albumów:
-- najnowszego
-- najlepszego
-- losowego

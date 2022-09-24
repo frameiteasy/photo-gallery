@@ -1,5 +1,0 @@
-Kafelki z albumami.
-Po kliknięciu na album otwiera się album, czyli:
-- pierwsze duze zdjęcie z albumu
-- kursorami (myszką) przeglądamy zdjęcia z albumu
-- pasek z miniaturami zdjęć: po kliknięciu na zdjęcie zdjęcie zostaje powiększone
