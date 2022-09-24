@@ -1,4 +1,5 @@
 import React from 'react';
+import './albums.scss';
 import getPhotos from '../../data/photos';
 import PhotoTile from '../../components/PhotoTile/PhotoTile';
 import { Photo } from '../../gtypes/photo';
