@@ -1,14 +1,16 @@
 @import 'config';
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
+/* Main styling */
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6em;
   background: $light-color;
 }
 
@@ -17,17 +19,19 @@ a {
   color: $dark-color;
 }
 
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
 ul {
   list-style: none;
 }
 
 img {
   width: 100%;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 

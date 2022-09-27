@@ -3,37 +3,39 @@
 $color: lightgrey;
 
 .nav {
-    display: flex;
-    background-color: $color;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
+    background: #333;
+    color: #fff;
+    overflow: auto;
 }
 
 .nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0.25rem;
+    color: white;
+
+}
+
+.nav h1 {
+    float: left;
+    padding-top: 20px;
 }
 
 .nav ul {
-    padding: 0;
-    margin: 0;
     list-style: none;
-    display: flex;
-    gap: 1rem;
+    float: right;
 }
 
-.nav li.active {
-    background-color: rgb(201, 19, 19);
+.nav ul li {
+    float: left;
 }
 
-.nav li:hover {
-    background-color: #777;
+.nav ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav li:hover, .nav ul li a.active {
+    background: #777;
+    color: #f7c08a;
 }
 
 .navbar__site-title {

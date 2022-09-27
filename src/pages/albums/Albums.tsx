@@ -9,7 +9,7 @@ const photos: Photo[] = getPhotos();
 const Albums: React.FC = () => {
     return(
         <>
-        <div className="container">
+        <div className="albums__container">
         {
           photos.map( (photo, index) => (
             <PhotoTile 
