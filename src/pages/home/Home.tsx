@@ -4,7 +4,14 @@ import './home.scss';
 const Home: React.FC = () => {
     return(
         <div className="home__wrapper">
-            <h1>Home</h1>
+            <div className="home__container">
+                <div className="home__content">
+                    <h1>Home</h1>
+                    <p className='home__lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga optio nam placeat soluta. Error, aut!</p>
+                    <a className='home__btn' href="album"> Album </a>
+                </div>      
+            </div>
+            
         </div>
     );
 }
