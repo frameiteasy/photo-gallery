@@ -1,44 +1,39 @@
 @import '../../config';
 
-$color: lightgrey;
-
 .nav {
-    background: #333;
-    color: #fff;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    & h1 {
+        float: left;
+        padding-top: 20px;
+    }
+
+    & ul {
+        display: flex;
+        float: right;
+
+        & li {
+            padding: 1rem 1.5rem;
+
+            & a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+                border-bottom: 3px transparent solid;
+                padding-bottom: 0.5rem;
+                transition: border-color 0.5s;
+
+                &:hover {
+                    border-color: $medium-color;
+                }
+
+                &.active {
+                    border-color: $main-color;
+                }
+            }
+        }
+    }
 }
 
-.nav a {
-    color: white;
-
-}
-
-.nav h1 {
-    float: left;
-    padding-top: 20px;
-}
-
-.nav ul {
-    list-style: none;
-    float: right;
-}
-
-.nav ul li {
-    float: left;
-}
-
-.nav ul li a {
-    display: block;
-    padding: 20px;
-    text-align: center;
-}
-
-.nav li a:hover, 
-.nav ul li a.active {
-    background: #777;
-    color: #f7c08a;
-}
-
-.navbar__site-title {
-    font-size: 2rem;
-}
