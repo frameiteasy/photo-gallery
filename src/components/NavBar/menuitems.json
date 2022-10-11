@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Home",
+        "path": "/",
+        "className": "active"
+    },
+    {
+        "name": "Albums",
+        "path": "/albums"
+    },
+    {
+        "name": "About",
+        "path": "/about"
+    },
+    {
+        "name": "Contact",
+        "path": "/contact"
+    }
+]

@@ -29,3 +29,6 @@ Generalnie chodzi o to, zeby:
 - mozna było tworzyć albumy prywatne - dostęp po zalogowaniu
 - co z interfejsem do tworzenia uzytkowników? ról? moze jest jakis serwis do tego (darmowy) - jeśli nie ma, to warto moze stworzyc taki serwis - niezaleznie? 
 - w pierwszej wersji są tylko albumy publiczne
+
+Stworze osobny serwis autoryzacyjny: react + express.js + mongoDb jak baza uzytkowników.
+Tutaj super-fajny przykład https://www.youtube.com/watch?v=2jqok-WgelI&list=FLRa7tlvXeAaUWI_LcRHtMTA&index=2
