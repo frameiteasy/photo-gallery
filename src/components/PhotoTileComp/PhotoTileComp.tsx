@@ -6,7 +6,7 @@ import { Photo } from '../../gtypes/photo';
  * Component should send a request for a picture to the server (callback)
 */
 
-const PhotoTile: React.FC<Photo> = (photo: Photo) => {
+const PhotoTileComp: React.FC<Photo> = (photo: Photo) => {
     return(
         <div className="photoTile__wrapper">
             <div className="photoTile__image">
@@ -19,4 +19,4 @@ const PhotoTile: React.FC<Photo> = (photo: Photo) => {
     )
 }
 
-export default PhotoTile;
+export default PhotoTileComp;

@@ -1,0 +1,36 @@
+@import '../../config';
+
+.header {
+    // Header Home
+    &__home {
+      background: $bg-image no-repeat center right / cover;
+      height: 100vh;
+      color: #fff;
+  
+      // Header Content
+      .header-content {
+        text-align: center;
+        padding-top: 20%;
+  
+        h1 {
+          font-size: 4rem;
+          line-height: 1.2;
+        }
+      }
+    }
+  
+    // Header Inner
+    &__inner {
+      background: $bg-image no-repeat 20% 30% / cover;
+      height: 5.5rem;
+      border-bottom: 3px solid $main-color;
+    }
+
+    &__container {
+
+        max-width: 1280px;
+        padding: 0 1.5rem;
+        margin: auto;
+        overflow: hidden; 
+    }
+  }

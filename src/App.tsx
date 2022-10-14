@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Navbar from './components/NavBar/Navbar';
 import Home from './pages/home/Home';
 import Albums from './pages/albums/Albums';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
+import HeaderComp from './components/HeaderComp/HeaderComp';
 
 function App() {
   return (
     <>
-        <Navbar />
+        <HeaderComp />
       
         <Routes>
           <Route path="/" element={<Home/>}></Route>

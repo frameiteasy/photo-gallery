@@ -7,7 +7,7 @@ import MenuItemComp from './MenuItemComp/MenuItemComp';
 
 const menuItems: MenuItem[] = getMenuItems();
 
-const Navbar: React.FC = () => {
+const NavbarComp: React.FC = () => {
     return(
         <nav className='nav'>
             <div className='container'>
@@ -27,4 +27,4 @@ const Navbar: React.FC = () => {
     );
 }
 
-export default Navbar;
+export default NavbarComp;
