@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./navbar.scss";
 import getMenuItems from './menuitems';
 import { MenuItem } from '../../gtypes/menuitem';
+import MenuItemComp from './MenuItemComp/MenuItemComp';
 
 const menuItems: MenuItem[] = getMenuItems();
 
@@ -16,11 +17,7 @@ const Navbar: React.FC = () => {
                 <ul>
                     {
                         menuItems.map( (item, index) => (
-                            <li>
-                                <Link to={item.path} className={item.className}>
-                                    {item.name}
-                                </Link>
-                            </li>
+                            <MenuItemComp {...item} />
                             )
                         )
                     }

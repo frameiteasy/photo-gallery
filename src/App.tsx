@@ -11,7 +11,7 @@ import Login from './pages/login/Login';
 function App() {
   return (
     <>
-      <Navbar />
+        <Navbar />
       
         <Routes>
           <Route path="/" element={<Home/>}></Route>

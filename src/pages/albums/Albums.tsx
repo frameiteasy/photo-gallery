@@ -12,12 +12,7 @@ const Albums: React.FC = () => {
         <div className="albums__container">
         {
           photos.map( (photo, index) => (
-            <PhotoTile 
-              key = { index }
-              name = { photo.name }  
-              title = {photo.title}
-              description = {photo.description}
-            /> 
+            <PhotoTile {...photo} />
           ))
         }            
         </div>
