@@ -10,8 +10,8 @@ const menuItems: MenuItem[] = getMenuItems();
 const NavbarComp: React.FC = () => {
     return(
         <nav className='nav'>
-            <div className='container'>
-                <h1 className='navbar__site-title'>
+           
+                <h1 className='nav__site-title'>
                     <Link to='/' className='navbar__logo'>Josef Chilersa Photography</Link>
                 </h1>
                 <ul>
@@ -22,7 +22,7 @@ const NavbarComp: React.FC = () => {
                         )
                     }
                 </ul>
-            </div>
+
         </nav>
     );
 }

@@ -7,38 +7,3 @@
   box-sizing: border-box;
 }
 
-/* Main styling */
-html,body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6em;
-  background: $light-color;
-}
-
-a {
-  text-decoration: none;
-  color: $dark-color;
-}
-
-h1, h2, h3 {
-  padding-bottom: 20px;
-}
-
-p {
-  margin: 10px 0;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  width: 100%;
-}
-
-.container {
-  margin: auto;
-  max-width: 85%;
-  overflow: auto;
-  padding: 0 20px;
-}
-
