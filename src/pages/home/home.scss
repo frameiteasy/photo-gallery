@@ -1,8 +1,10 @@
 @import '../../config';
 
 .home__wrapper {
-  background: $bg-image no-repeat center right / cover;
+  background: $bg-image no-repeat center center / cover;
   height: 100vh;
+  position: relative;
+  color: #fff;
 }
 
 .home__content {

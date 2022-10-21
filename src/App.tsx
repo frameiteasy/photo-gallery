@@ -7,12 +7,13 @@ import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
 import HeaderComp from './components/HeaderComp/HeaderComp';
+import FooterComp from './components/FooterComp/FooterComp';
 
 function App() {
   return (
-    <>
+    <div id="app_container">
         <HeaderComp />
-        <div>
+        <div id="page__container">
           <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/albums" element={<Albums/>}></Route>
@@ -20,8 +21,9 @@ function App() {
             <Route path="/contact" element={<Contact/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
           </Routes> 
+          <FooterComp />
         </div>
-    </>
+    </div>
   );
 }
 

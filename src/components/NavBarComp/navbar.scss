@@ -5,9 +5,10 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     gap: 2rem;
     padding: 0 5%;
+    opacity: 0.8;
 
     & .navbar__logo {
         font-size: 3rem;

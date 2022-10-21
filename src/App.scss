@@ -1,4 +1,5 @@
 @import 'config';
+@import 'utilities';
 
 /* Reset */
 * {
@@ -7,3 +8,20 @@
   box-sizing: border-box;
 }
 
+body {
+  background: $light-color;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}

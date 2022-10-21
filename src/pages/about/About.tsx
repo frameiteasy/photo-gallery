@@ -1,8 +1,11 @@
 import React from 'react';
+import './about.scss';
 
 const About: React.FC = () => {
     return(
-        <h1>About</h1>
+        <div id="about__container">
+            <h1>About</h1>
+        </div>
     );
 }
 
