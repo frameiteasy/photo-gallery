@@ -1,5 +1,5 @@
-@import 'config';
-@import 'utilities';
+@import "config";
+@import "utilities";
 
 /* Reset */
 * {
@@ -13,7 +13,8 @@ body {
   line-height: 1.6;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 300;
   line-height: 1.2;
 }
@@ -24,4 +25,11 @@ p {
 
 img {
   width: 100%;
+}
+
+#app__container {
+  background: $bg-image no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
 }

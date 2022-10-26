@@ -11,7 +11,7 @@ import FooterComp from './components/FooterComp/FooterComp';
 
 function App() {
   return (
-    <div id="app_container">
+    <div id="app__container">
         <HeaderComp />
         <div id="page__container">
           <Routes>
