@@ -1,5 +1,5 @@
-export interface MenuItem {
-    name: string,
-    path: string,
-    className?: string
+export interface MenuItemType {
+  name: string;
+  path: string;
+  className?: string | undefined;
 }
