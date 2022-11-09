@@ -4,7 +4,7 @@
     "title": "Ireland",
     "photos": "p1, p2, p3",
     "description": "album01 Ireland description",
-    "onHomePage": true
+    "onHomePage": false
   },
   {
     "name": "album02",
@@ -15,6 +15,7 @@
   {
     "name": "album03",
     "title": "Portaits",
-    "photos": "p1, p2, p4, p5"
+    "photos": "p1, p2, p4, p5",
+    "onHomePage": true
   }
 ]

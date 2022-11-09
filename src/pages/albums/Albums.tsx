@@ -1,6 +1,6 @@
 import React from "react";
 import "./albums.scss";
-import getAlbums from "../../data/albums";
+import { getAlbums } from "../../data/albums";
 import AlbumTile from "../../components/AlbumTile/AlbumTile";
 import { Album } from "../../gtypes/album";
 
