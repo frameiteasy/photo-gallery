@@ -1,5 +1,6 @@
 import React from "react";
 import { Album } from "../../gtypes/album";
+import "./albumTile.scss";
 
 /*
  * Component should send a request for a picture to the server (callback)

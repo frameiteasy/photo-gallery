@@ -14,10 +14,6 @@ const Home: React.FC = () => {
           nam placeat soluta. Error, aut!
         </p>
         <AlbumTile {...homePageAlbum} />
-        <a className="home__btn" href="albums">
-          {" "}
-          Album{" "}
-        </a>
       </div>
     </div>
   );
