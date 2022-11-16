@@ -13,7 +13,9 @@ const Home: React.FC = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga optio
           nam placeat soluta. Error, aut!
         </p>
-        <AlbumTile {...homePageAlbum} />
+        <div id="home__album">
+          <AlbumTile {...homePageAlbum} />
+        </div>
       </div>
     </div>
   );

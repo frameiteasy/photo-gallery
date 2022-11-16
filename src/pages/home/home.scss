@@ -13,6 +13,11 @@
     padding-bottom: 20px;
     line-height: 1.7em;
   }
+
+  & #home__album {
+    justify-content: center;
+    display: flex;
+  }
 }
 
 .home__lead {
