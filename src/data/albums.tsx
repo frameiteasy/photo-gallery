@@ -18,6 +18,7 @@ const emptyAlbum = () => {
   return {
     name: "empty",
     title: "empty",
+    cover: "empty",
     description: "empty album",
     photos: "",
   };

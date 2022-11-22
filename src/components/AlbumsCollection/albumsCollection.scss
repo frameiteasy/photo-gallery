@@ -2,4 +2,7 @@
 @import "../../utilities";
 
 #albums__container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
 }
