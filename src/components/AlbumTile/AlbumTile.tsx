@@ -8,9 +8,13 @@ import "./albumTile.scss";
 
 import pict from "../../data/albums/album1/photos/photo1.jpg";
 
+const handleClick = (album: Album) => {
+  console.log("Open galery with " + album.name);
+};
+
 const AlbumTile: React.FC<Album> = (album: Album) => {
   return (
-    <div className="albumTile__wrapper">
+    <div className="albumTile__wrapper" onClick={() => handleClick(album)}>
       <div className="albumTile__image">
         <img src={pict}></img>
       </div>
