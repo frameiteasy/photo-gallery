@@ -1,8 +1,8 @@
 import albums from "./albums.json";
+import { Photo } from "../gtypes/photo";
+import { Album } from "../gtypes/album";
 
-export const getAlbums = () => {
-  return albums;
-};
+const albumsFolder = "./albums";
 
 const searchHomeAlbum = () => {
   let foundAlbum = albums.find((album) => album.onHomePage);
@@ -24,13 +24,16 @@ const emptyAlbum = () => {
   };
 };
 
+export const getAlbums = () => {
+  return albums;
+};
+
 /*
   get album with onHomePage=true
   if there are no albums - leave empty
   if there are albums, but non of them with onHomePage=true, get a random one
 */
 export const getHomePageAlbum = () => {
-  console.log(albums.length);
   if (albums.length > 0) {
     let homeAlbum = searchHomeAlbum();
     if (homeAlbum != undefined) {
@@ -40,4 +43,10 @@ export const getHomePageAlbum = () => {
     }
   }
   return emptyAlbum();
+};
+
+export const getAlbumPhotos = (album: Album): Photo[] => {
+  const tmp = require(albumsFolder + "/" + album.name + "/album.json");
+  console.log(tmp);
+  return [];
 };

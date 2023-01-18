@@ -6,10 +6,12 @@ import "./albumTile.scss";
  * Component should send a request for a picture to the server (callback)
  */
 
-import pict from "../../data/albums/album1/photos/photo1.jpg";
+import pict from "../../data/albums/album01/photos/photo1.jpg";
+import { getAlbumPhotos } from "../../data/albums";
 
 const handleClick = (album: Album) => {
   console.log("Open galery with " + album.name);
+  const photos = getAlbumPhotos(album);
 };
 
 const AlbumTile: React.FC<Album> = (album: Album) => {
