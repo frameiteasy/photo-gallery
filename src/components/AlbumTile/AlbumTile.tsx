@@ -1,17 +1,18 @@
-import React from "react";
-import { Album } from "../../gtypes/album";
-import "./albumTile.scss";
+import React from 'react';
+import { Album } from '../../gtypes/album';
+import './albumTile.scss';
 
 /*
  * Component should send a request for a picture to the server (callback)
  */
 
-import pict from "../../data/albums/album01/photos/photo1.jpg";
-import { getAlbumPhotos } from "../../data/albums";
+import pict from '../../data/albums/album01/photos/photo1.jpg';
+import { getAlbumPhotos } from '../../data/albums';
 
 const handleClick = (album: Album) => {
-  console.log("Open galery with " + album.name);
+  console.log('Open galery with ' + album.name);
   const photos = getAlbumPhotos(album);
+  console.log('Album photos', photos);
 };
 
 const AlbumTile: React.FC<Album> = (album: Album) => {

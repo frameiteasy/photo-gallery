@@ -1,8 +1,10 @@
-import albums from "./albums.json";
-import { Photo } from "../gtypes/photo";
-import { Album } from "../gtypes/album";
+import albums from './albums.json';
+import { Photo } from '../gtypes/photo';
+import { Album } from '../gtypes/album';
+// TODO path doesn't work here
+// const path = require('path');
 
-const albumsFolder = "./albums";
+const albumsFolder: string | undefined = process.env.REACT_APP_ALBUM_FOLDER;
 
 const searchHomeAlbum = () => {
   let foundAlbum = albums.find((album) => album.onHomePage);
@@ -16,11 +18,11 @@ const randomAlbum = () => {
 
 const emptyAlbum = () => {
   return {
-    name: "empty",
-    title: "empty",
-    cover: "empty",
-    description: "empty album",
-    photos: "",
+    name: 'empty',
+    title: 'empty',
+    cover: 'empty',
+    description: 'empty album',
+    photos: '',
   };
 };
 
@@ -36,7 +38,7 @@ export const getAlbums = () => {
 export const getHomePageAlbum = () => {
   if (albums.length > 0) {
     let homeAlbum = searchHomeAlbum();
-    if (homeAlbum != undefined) {
+    if (homeAlbum !== undefined) {
       return homeAlbum;
     } else {
       return randomAlbum();
@@ -46,7 +48,5 @@ export const getHomePageAlbum = () => {
 };
 
 export const getAlbumPhotos = (album: Album): Photo[] => {
-  const tmp = require(albumsFolder + "/" + album.name + "/album.json");
-  console.log(tmp);
-  return [];
+  return require(albumsFolder + '/' + album.name + '/album.json').photos;
 };
