@@ -47,6 +47,6 @@ export const getHomePageAlbum = () => {
   return emptyAlbum();
 };
 
-export const getAlbumPhotos = (album: Album): Photo[] => {
-  return require(albumsFolder + '/' + album.name + '/album.json').photos;
+export const getAlbumPhotos = (album: string | undefined): Photo[] => {
+  return require(albumsFolder + '/' + album + '/album.json').photos;
 };

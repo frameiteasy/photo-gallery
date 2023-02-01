@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Album } from '../../gtypes/album';
 import './albumTile.scss';
 
@@ -9,15 +10,12 @@ import './albumTile.scss';
 import pict from '../../data/albums/album01/photos/photo1.jpg';
 import { getAlbumPhotos } from '../../data/albums';
 
-const handleClick = (album: Album) => {
-  console.log('Open galery with ' + album.name);
-  const photos = getAlbumPhotos(album);
-  console.log('Album photos', photos);
-};
-
 const AlbumTile: React.FC<Album> = (album: Album) => {
+  const navigate = useNavigate();
+  const galleryUrl = '/gallery/' + album.name;
+  console.log('GalleryURL: ', galleryUrl);
   return (
-    <div className="albumTile__wrapper" onClick={() => handleClick(album)}>
+    <div className="albumTile__wrapper" onClick={() => navigate(galleryUrl)}>
       <div className="albumTile__image">
         <img src={pict}></img>
       </div>
