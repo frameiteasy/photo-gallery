@@ -1,13 +1,12 @@
 import React from 'react';
 import { Photo } from '../../gtypes/photo';
-
 import './galleryViewer.scss';
 
-// {photos.map((photo, index) => photo.name)}
-
 const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
-  console.log('Photos Gallery ', photos);
-  return <div>Photos Gallery</div>;
+  console.log('GalleryViewer ', photos);
+  console.log('GalleryViewer 1 ', Object.values(photos));
+  console.log(Array.isArray(photos));
+  return <div>{Object.values(photos).map((photo, index) => photo.name)}</div>;
 };
 
 export default GalleryViewer;

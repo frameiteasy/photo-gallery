@@ -2,13 +2,14 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import GalleryViewer from '../../components/Gallery/GalleryViewer';
 import { getAlbumPhotos } from '../../data/albums';
+import { Photo } from '../../gtypes/photo';
 
 import './gallery.scss';
 
 const Gallery: React.FC = () => {
   const { albumName } = useParams();
 
-  const photos = getAlbumPhotos(albumName);
+  const photos: Photo[] = getAlbumPhotos(albumName);
 
   //TODO
   // - check if album exists
@@ -16,7 +17,7 @@ const Gallery: React.FC = () => {
   // - if yes - get album's photos &  open GalleryViewer
   //
 
-  console.log(photos);
+  console.log('Gallery:', photos);
   return (
     <div>
       <GalleryViewer {...photos} />
