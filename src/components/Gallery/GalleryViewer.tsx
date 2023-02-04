@@ -1,12 +1,19 @@
 import React from 'react';
 import { Photo } from '../../gtypes/photo';
 import './galleryViewer.scss';
+import PhotoCanva from './PhotoCanva/PhotoCanva';
+import PhotosStripe from './PhotosStripe/PhotosStripe';
 
 const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
-  console.log('GalleryViewer ', photos);
+  //TODO why I pass an array, but receive an object?
   console.log('GalleryViewer 1 ', Object.values(photos));
   console.log(Array.isArray(photos));
-  return <div>{Object.values(photos).map((photo, index) => photo.name)}</div>;
+  return (
+    <div>
+      <PhotosStripe />
+      <PhotoCanva />
+    </div>
+  );
 };
 
 export default GalleryViewer;

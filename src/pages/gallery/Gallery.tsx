@@ -19,7 +19,7 @@ const Gallery: React.FC = () => {
 
   console.log('Gallery:', photos);
   return (
-    <div>
+    <div id="gallery__container">
       <GalleryViewer {...photos} />
     </div>
   );
