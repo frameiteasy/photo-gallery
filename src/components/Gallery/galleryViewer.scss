@@ -5,6 +5,17 @@ body {
   background-color: $light-color;
 }
 
-#gallery__container {
+#galleryViewer__container {
+  display: flex;
+  flex-direction: row;
   background-color: green;
+}
+
+#galleryViewer__stripe {
+  background-color: yellow;
+  height: 80vh;
+}
+
+#galleryViewer__canva {
+  background-color: blue;
 }

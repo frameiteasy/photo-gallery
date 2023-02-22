@@ -9,9 +9,13 @@ const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
   console.log('GalleryViewer 1 ', Object.values(photos));
   console.log(Array.isArray(photos));
   return (
-    <div>
-      <PhotosStripe />
-      <PhotoCanva />
+    <div id="galleryViewer__container">
+      <div id="galleryViewer__stripe">
+        <PhotosStripe {...photos} />
+      </div>
+      <div id="galleryViewer__canva">
+        <PhotoCanva {...photos} />
+      </div>
     </div>
   );
 };
