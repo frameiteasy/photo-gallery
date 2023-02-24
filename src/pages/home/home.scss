@@ -1,17 +1,21 @@
-@import "../../config";
+@import '../../config';
 
-.home__content {
-  text-align: center;
+#home__content {
   padding-top: 170px;
 
-  & h1 {
-    font-size: 60px;
-    line-height: 1.2em;
-  }
+  & #home__message {
+    margin: auto;
+    max-width: 500px;
 
-  & p {
-    padding-bottom: 20px;
-    line-height: 1.7em;
+    & h1 {
+      font-size: 60px;
+      line-height: 1.2em;
+    }
+
+    & p {
+      padding-bottom: 20px;
+      line-height: 1.7em;
+    }
   }
 
   & #home__album {

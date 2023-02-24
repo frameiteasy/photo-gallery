@@ -1,5 +1,5 @@
-@import "config";
-@import "utilities";
+@import 'config';
+@import 'utilities';
 
 /* Reset */
 * {
@@ -32,4 +32,8 @@ img {
   height: 100vh;
   position: relative;
   color: #fff;
+}
+
+#page__container {
+  margin: auto;
 }

@@ -6,16 +6,20 @@ body {
 }
 
 #galleryViewer__container {
-  display: flex;
-  flex-direction: row;
+  box-sizing: border-box;
   background-color: green;
 }
 
 #galleryViewer__stripe {
   background-color: yellow;
   height: 80vh;
+  width: 15%;
+  float: left;
 }
 
 #galleryViewer__canva {
   background-color: blue;
+  height: 80vh;
+  width: 84%;
+  float: right;
 }
