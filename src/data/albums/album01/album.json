@@ -4,12 +4,12 @@
   "description": "This is album 1",
   "photos": [
     {
-      "name": "photo11.jpg",
+      "name": "photo1.jpg",
       "title": "photo 11",
       "description": "This is photo 11"
     },
     {
-      "name": "photo12.jpg",
+      "name": "photo1.jpg",
       "title": "photo 12",
       "description": "This is photo 12"
     }

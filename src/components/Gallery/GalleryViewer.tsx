@@ -11,13 +11,13 @@ const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
   console.log(Array.isArray(photos));
 
   const initPhoto = {
-    name: '',
-    title: '',
-    description: '',
+    name: 'photo1.jpg',
+    title: 'Cross',
+    description: 'Cross on a hill',
   };
 
-  const [currentPhoto, setCurrentPhoto] = useState<Photo>(initPhoto);
-
+  const [currentPhoto, setCurrentPhoto] = useState<Photo>(photos[0]);
+  console.log(currentPhoto);
   return (
     <div id="galleryViewer__container">
       <div id="galleryViewer__stripe">
