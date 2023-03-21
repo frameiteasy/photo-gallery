@@ -7,17 +7,19 @@ import './albumTile.scss';
  * Component should send a request for a picture to the server (callback)
  */
 
-import pict from '../../data/albums/album01/photos/photo1.jpg';
+import pict from '../../data/albums/album01/photos/photo11.jpg';
 import { getAlbumPhotos } from '../../data/albums';
+
+const photosFolder: string | undefined = process.env.REACT_APP_PHOTOS_FOLDER;
 
 const AlbumTile: React.FC<Album> = (album: Album) => {
   const navigate = useNavigate();
   const galleryUrl = '/gallery/' + album.name;
-  console.log('GalleryURL: ', galleryUrl);
+
   return (
     <div className="albumTile__wrapper" onClick={() => navigate(galleryUrl)}>
       <div className="albumTile__image">
-        <img src={pict}></img>
+        <img src={photosFolder + '/' + album.cover}></img>
       </div>
 
       <h3>{album.name}</h3>

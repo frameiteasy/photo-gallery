@@ -7,6 +7,7 @@ import { Album } from '../../gtypes/album';
 const albums: Album[] = getAlbums();
 
 const AlbumsCollection: React.FC = () => {
+  console.log(albums);
   return (
     <div id="albumscollection__container">
       {albums.map((album, index) => (

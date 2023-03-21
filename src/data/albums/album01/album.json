@@ -1,15 +1,15 @@
 {
   "title": "Album 1",
-  "cover": "./photos/photo1.jpg",
+  "cover": "photo11.jpg",
   "description": "This is album 1",
   "photos": [
     {
-      "name": "photo1.jpg",
+      "name": "photo11.jpg",
       "title": "photo 11",
       "description": "This is photo 11"
     },
     {
-      "name": "photo1.jpg",
+      "name": "photo12.jpg",
       "title": "photo 12",
       "description": "This is photo 12"
     }
