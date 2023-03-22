@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Photo } from '../../gtypes/photo';
+import { ISetCurPhoto } from '../../gtypes/iSetCurPhoto';
 import './galleryViewer.scss';
 import PhotoCanva from './PhotoCanva/PhotoCanva';
 import PhotosStripe from './PhotosStripe/PhotosStripe';
@@ -17,11 +18,17 @@ const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
   };
 
   const [currentPhoto, setCurrentPhoto] = useState<Photo>(photos[0]);
+
+  const iSetCurPhoto: ISetCurPhoto = {
+    photos: photos,
+    setCurrentPhoto: setCurrentPhoto,
+  };
+
   console.log(currentPhoto);
   return (
     <div id="galleryViewer__container">
       <div id="galleryViewer__stripe">
-        <PhotosStripe {...photos} />
+        <PhotosStripe {...iSetCurPhoto} />
       </div>
       <div id="galleryViewer__canva">
         <PhotoCanva {...currentPhoto} />

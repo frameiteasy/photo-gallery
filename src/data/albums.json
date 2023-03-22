@@ -3,22 +3,19 @@
     "name": "album01",
     "title": "Ireland",
     "cover": "album101.jpg",
-    "photos": "p1, p2, p3",
     "description": "album01 Ireland description",
     "onHomePage": false
   },
   {
     "name": "album02",
-    "title": "Poland",
+    "title": "Kanary",
     "cover": "kanary201.jpg",
-    "photos": "p1, p2, p4",
     "description": "album01 Ireland description"
   },
   {
     "name": "album03",
     "title": "Portaits",
     "cover": "album301.jpg",
-    "photos": "p1, p2, p4, p5",
     "onHomePage": true
   }
 ]

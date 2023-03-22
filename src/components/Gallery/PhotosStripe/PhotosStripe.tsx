@@ -1,17 +1,22 @@
 import React from 'react';
-import { Photo } from '../../../gtypes/photo';
+import { ISetCurPhoto } from '../../../gtypes/iSetCurPhoto';
 import './photosStripe.scss';
-import pict from '../../../data/albums/album01/photos/photo1.jpg';
 
 const photosFolder: string | undefined = process.env.REACT_APP_PHOTOS_FOLDER;
 
-const PhotosStripe: React.FC<Photo[]> = (photos: Photo[]) => {
-  console.log("Photos' Stripe", photos);
+const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
+  console.log("Photos' Stripe", iSetCurPhoto);
   const miniatures = [];
+  //TODO map over all photos from the array
   for (let i = 0; i < 6; i++) {
     miniatures.push(
       <div id="gallerystripe__mini_picture">
-        <img src={photosFolder + '/' + photos[0].name}></img>
+        <img
+          key={i}
+          alt="ala ma kota"
+          src={photosFolder + '/' + iSetCurPhoto.photos[i].name}
+          onClick={iSetCurPhoto.setCurrentPhoto({ i })}
+        ></img>
       </div>
     );
   }
