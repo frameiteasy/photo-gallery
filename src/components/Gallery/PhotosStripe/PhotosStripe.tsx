@@ -15,7 +15,7 @@ const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
           key={i}
           alt="ala ma kota"
           src={photosFolder + '/' + iSetCurPhoto.photos[i].name}
-          onClick={iSetCurPhoto.setCurrentPhoto({ i })}
+          onClick={() => iSetCurPhoto.setCurrentPhoto(i)}
         ></img>
       </div>
     );
