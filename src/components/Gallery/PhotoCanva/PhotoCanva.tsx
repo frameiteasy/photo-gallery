@@ -4,11 +4,10 @@ import './photoCanva.scss';
 
 const photosFolder: string | undefined = process.env.REACT_APP_PHOTOS_FOLDER;
 
-const PhotoCanva: React.FC<Photo> = (photo: Photo) => {
-  console.log('Photo Canva', photo);
+const PhotoCanva: React.FC<Photo> = (currentPhoto: Photo) => {
   return (
     <div id="galleryphotocanva__container">
-      <img src={photosFolder + '/' + photo.name}></img>
+      <img src={photosFolder + '/' + currentPhoto.name}></img>
     </div>
   );
 };

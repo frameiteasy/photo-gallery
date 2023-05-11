@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Photo } from '../../gtypes/photo';
 import { ISetCurPhoto } from '../../gtypes/iSetCurPhoto';
@@ -19,12 +19,16 @@ const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
 
   const [currentPhoto, setCurrentPhoto] = useState<Photo>(photos[0]);
 
-  const iSetCurPhoto: ISetCurPhoto = {
-    photos: photos,
-    setCurrentPhoto: setCurrentPhoto,
+  let currentPhotography = photos[0];
+  const setCurrentPhotography = (i: number) => {
+    setCurrentPhoto(photos[i]);
   };
 
-  console.log(currentPhoto);
+  const iSetCurPhoto: ISetCurPhoto = {
+    photos: photos,
+    setCurrentPhoto: setCurrentPhotography,
+  };
+
   return (
     <div id="galleryViewer__container">
       <div id="galleryViewer__stripe">
