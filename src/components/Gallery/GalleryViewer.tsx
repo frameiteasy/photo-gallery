@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { Photo } from '../../gtypes/photo';
 import { ISetCurPhoto } from '../../gtypes/iSetCurPhoto';
@@ -11,15 +11,8 @@ const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
   console.log('GalleryViewer 1 ', Object.values(photos));
   console.log(Array.isArray(photos));
 
-  const initPhoto = {
-    name: 'photo1.jpg',
-    title: 'Cross',
-    description: 'Cross on a hill',
-  };
-
   const [currentPhoto, setCurrentPhoto] = useState<Photo>(photos[0]);
 
-  let currentPhotography = photos[0];
   const setCurrentPhotography = (i: number) => {
     setCurrentPhoto(photos[i]);
   };

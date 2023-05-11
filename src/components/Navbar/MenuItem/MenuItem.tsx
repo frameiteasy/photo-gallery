@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { MenuItemType } from "../../../gtypes/menuitem";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { MenuItemType } from '../../../gtypes/menuitem';
 
 const MenuItem: React.FC<MenuItemType> = (menuItem: MenuItemType) => {
   return (

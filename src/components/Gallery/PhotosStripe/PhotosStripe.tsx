@@ -12,8 +12,8 @@ const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
     miniatures.push(
       <div id="gallerystripe__mini_picture">
         <img
-          key={i}
-          alt="ala ma kota"
+          key={iSetCurPhoto.photos[i].name}
+          alt={iSetCurPhoto.photos[i].name}
           src={photosFolder + '/' + iSetCurPhoto.photos[i].name}
           onClick={() => {
             iSetCurPhoto.setCurrentPhoto(i);
