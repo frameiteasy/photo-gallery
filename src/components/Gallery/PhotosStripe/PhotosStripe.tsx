@@ -5,10 +5,9 @@ import './photosStripe.scss';
 const photosFolder: string | undefined = process.env.REACT_APP_PHOTOS_FOLDER;
 
 const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
-  console.log("Photos' Stripe", iSetCurPhoto);
   const miniatures = [];
   //TODO map over all photos from the array
-  for (let i = 0; i < 6; i++) {
+  for (let i in iSetCurPhoto.photos) {
     miniatures.push(
       <div id="gallerystripe__mini_picture">
         <img
