@@ -8,9 +8,6 @@ import PhotosStripe from './PhotosStripe/PhotosStripe';
 
 const GalleryViewer: React.FC<Photo[]> = (photos: Photo[]) => {
   //TODO why I pass an array, but receive an object?
-  console.log('GalleryViewer 1 ', Object.values(photos));
-  console.log(Array.isArray(photos));
-
   const [currentPhoto, setCurrentPhoto] = useState<Photo>(photos[0]);
 
   const setCurrentPhotography = (i: number) => {
