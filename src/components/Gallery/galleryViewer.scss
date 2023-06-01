@@ -18,7 +18,7 @@ $stripe-width: 200px;
   background-color: darkmagenta;
   width: $stripe-width;
   float: left;
-  height: 85vh;
+  height: 740px;
   align-items: center;
   overflow-y: auto;
   overflow-x: hide;
@@ -26,6 +26,9 @@ $stripe-width: 200px;
 
 #galleryViewer__canva {
   background-color: blue;
-  width: 84%;
+  // ratio: a/b=1.618
+  width: 1200px;
+  height: 740px;
   float: right;
+  overflow: hidden;
 }
