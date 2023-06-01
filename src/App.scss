@@ -30,10 +30,11 @@ img {
 #app__container {
   background: $bg-image no-repeat center center / cover;
   height: 100vh;
-  position: relative;
   color: #fff;
 }
 
 #page__container {
   margin: auto;
+  display: inline-block;
+  overflow: hidden;
 }

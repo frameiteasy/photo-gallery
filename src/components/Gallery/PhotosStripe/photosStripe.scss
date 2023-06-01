@@ -10,14 +10,13 @@ body {
   background-color: green;
   padding: 10px;
   align-content: center;
-  overflow: scroll;
   height: 90%;
 }
 
 #gallerystripe__mini_picture {
   box-sizing: border-box;
   width: 150px;
-  height: 100px;
+  //height: 100px;
   background-color: grey;
   border: 1px;
   border-style: solid;

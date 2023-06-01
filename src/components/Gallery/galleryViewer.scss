@@ -5,22 +5,27 @@ body {
   background-color: $light-color;
 }
 
+$miniature-width: 300px;
+$stripe-width: 200px;
+
 #galleryViewer__container {
   box-sizing: border-box;
   background-color: green;
+  height: auto;
 }
 
 #galleryViewer__stripe {
   background-color: darkmagenta;
-  height: 80vh;
-  width: 15%;
+  width: $stripe-width;
   float: left;
+  height: 85vh;
   align-items: center;
+  overflow-y: auto;
+  overflow-x: hide;
 }
 
 #galleryViewer__canva {
   background-color: blue;
-  height: 80vh;
   width: 84%;
   float: right;
 }

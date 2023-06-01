@@ -16,8 +16,6 @@ const Gallery: React.FC = () => {
   // - if no - worning modal window
   // - if yes - get album's photos &  open GalleryViewer
   //
-
-  console.log('Gallery:', photos);
   return (
     <div id="gallery__container">
       <GalleryViewer {...photos} />

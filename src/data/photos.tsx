@@ -1,7 +1,7 @@
-import photos from './photos.json'; 
+import photos from './photos.json';
 
 const getPhotos = () => {
-    return photos;
-}
+  return photos;
+};
 
 export default getPhotos;
