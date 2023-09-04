@@ -14,14 +14,24 @@ body {
 }
 
 #gallerystripe__mini_picture {
-  box-sizing: border-box;
+  background-color: lightgray;
+  flex-grow: 1;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  max-height: 800px;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hide;
+  flex-wrap: nowrap;
+}
+
+.mini_picture {
   width: 150px;
-  //height: 100px;
-  background-color: grey;
-  border: 1px;
-  border-style: solid;
-  border-color: black;
-  text-align: center;
-  margin-bottom: 10px;
-  scrollbar-color: white red;
+  height: 80px;
+  border: solid 1px;
+  margin: 2px;
+  flex-shrink: 0;
+  justify-content: center center;
+  object-fit: contain;
 }

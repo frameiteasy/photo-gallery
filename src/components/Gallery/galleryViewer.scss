@@ -9,26 +9,21 @@ $miniature-width: 300px;
 $stripe-width: 200px;
 
 #galleryViewer__container {
-  box-sizing: border-box;
-  background-color: green;
-  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
 }
 
 #galleryViewer__stripe {
-  background-color: darkmagenta;
-  width: $stripe-width;
-  float: left;
-  height: 740px;
-  align-items: center;
-  overflow-y: auto;
-  overflow-x: hide;
+  background-color: lightpink;
+  max-width: 200px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 #galleryViewer__canva {
-  background-color: blue;
-  // ratio: a/b=1.618
-  width: 1200px;
-  height: 740px;
-  float: right;
-  overflow: hidden;
+  background-color: brown;
+  padding: 5px;
 }

@@ -1,11 +1,28 @@
 @import '../../config';
 
+#home__container {
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+
 #home__content {
-  padding-top: 170px;
+  background-color: rgb(2, 86, 114);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  align-items: center;
 
   & #home__message {
+    background-color: darkred;
+    width: 30%;
     margin: auto;
-    max-width: 500px;
 
     & h1 {
       font-size: 60px;

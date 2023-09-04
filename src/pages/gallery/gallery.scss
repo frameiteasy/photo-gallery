@@ -1,6 +1,9 @@
 @import '../../config';
 
 #gallery__container {
-  background-color: $light-color;
-  margin: 2rem 5rem 2rem 5rem;
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px;
+  margin: auto;
 }
