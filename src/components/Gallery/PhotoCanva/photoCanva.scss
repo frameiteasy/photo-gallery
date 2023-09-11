@@ -7,10 +7,10 @@ body {
 
 #galleryphotocanva__container {
   align-items: baseline;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .big__picture {
   object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
