@@ -8,6 +8,7 @@ const PhotoCanva: React.FC<Photo> = (currentPhoto: Photo) => {
   return (
     <div id="galleryphotocanva__container">
       <img
+        className="big__picture"
         src={photosFolder + '/' + currentPhoto.name}
         alt={currentPhoto.name}
       ></img>

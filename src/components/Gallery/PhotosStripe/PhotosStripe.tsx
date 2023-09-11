@@ -9,20 +9,23 @@ const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
   //TODO map over all photos from the array
   for (let i in iSetCurPhoto.photos) {
     miniatures.push(
-      <div id="gallerystripe__mini_picture">
-        <img
-          key={iSetCurPhoto.photos[i].name}
-          alt={iSetCurPhoto.photos[i].name}
-          className="mini_picture"
-          src={photosFolder + '/' + iSetCurPhoto.photos[i].name}
-          onClick={() => {
-            iSetCurPhoto.setCurrentPhoto(i);
-          }}
-        ></img>
-      </div>
+      <img
+        key={iSetCurPhoto.photos[i].name}
+        alt={iSetCurPhoto.photos[i].name}
+        className="mini__picture"
+        src={photosFolder + '/' + iSetCurPhoto.photos[i].name}
+        onClick={() => {
+          console.log('click...');
+          iSetCurPhoto.setCurrentPhoto(i);
+        }}
+      ></img>
     );
   }
-  return <div id="gallerystripe__container">{miniatures}</div>;
+  return (
+    <div id="gallerystripe__container">
+      <div id="gallerystripe__mini_picture">{miniatures}</div>
+    </div>
+  );
 };
 
 export default PhotosStripe;
