@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./navbar.scss";
-import getMenuItems from "./menuitems";
-import { MenuItemType } from "../../gtypes/menuitem";
-import MenuItem from "./MenuItem/MenuItem";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.scss';
+import getMenuItems from './menuitems';
+import { MenuItemType } from '../../gtypes/menuitem';
+import MenuItem from './MenuItem/MenuItem';
 
 const menuItems: MenuItemType[] = getMenuItems();
 
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       </h1>
       <ul>
         {menuItems.map((item, index) => (
-          <MenuItem {...item} />
+          <MenuItem key={index} {...item} />
         ))}
       </ul>
     </nav>

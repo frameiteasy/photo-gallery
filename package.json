@@ -48,9 +48,9 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/node-sass": "^4.11.3",
-    "node-sass": "^7.0.3"
+    "@types/node": "^20.7.0",
+    "@types/node-sass": "^4.11.5",
+    "node-sass": "^9.0.0"
   },
   "browser": {
     "path": false,

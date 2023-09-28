@@ -1,10 +1,12 @@
 import albums from './albums.json';
 import { Photo } from '../gtypes/photo';
 import { Album } from '../gtypes/album';
+import { useState } from 'react';
 // TODO path doesn't work here
 // const path = require('path');
 
 const albumsFolder: string | undefined = process.env.REACT_APP_ALBUM_FOLDER;
+const albumsServer: string | undefined = process.env.REACT_APP_SERVER;
 
 const searchHomeAlbum = () => {
   let foundAlbum = albums.find((album) => album.onHomePage);
@@ -24,6 +26,18 @@ const emptyAlbum = () => {
     description: 'empty album',
     photos: '',
   };
+};
+
+export const getAlbums2 = async () => {
+  let resp: Album[] = [];
+  try {
+    const response: Album[] = await fetch(`${albumsServer}/albums`).then(
+      (response) => response.json()
+    );
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const getAlbums = () => {
