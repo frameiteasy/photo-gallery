@@ -1,9 +1,10 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
+import './header.scss';
 
 const Header: React.FC = () => {
   return (
-    <header className="header__home">
+    <header id="header__home">
       <Navbar />
     </header>
   );

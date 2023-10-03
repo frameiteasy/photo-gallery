@@ -1,1 +1,10 @@
-@import "../../config";
+@import '../../config';
+
+#header__home {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // max-width: $page-width;
+  width: $page-width;
+  padding: 10px;
+}

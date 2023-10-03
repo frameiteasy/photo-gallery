@@ -9,18 +9,19 @@ const menuItems: MenuItemType[] = getMenuItems();
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="nav">
-      <h1 className="nav__site-title">
+    <div id="nav">
+      <h1 id="nav__site-title">
         <Link to="/" className="navbar__logo">
           Josef Chilersa Photography
         </Link>
       </h1>
-      <ul>
+
+      <ul id="nav__menu">
         {menuItems.map((item, index) => (
           <MenuItem key={index} {...item} />
         ))}
       </ul>
-    </nav>
+    </div>
   );
 };
 
