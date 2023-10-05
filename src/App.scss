@@ -44,14 +44,18 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-start;
   height: 100vh;
-  width: 100%;
+  width: $page-width;
 }
 
 #page__container {
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-color: pink;
   width: $page-width;
+  flex-grow: 1;
   margin: auto;
-  display: inline-block;
-  overflow: hidden;
 }

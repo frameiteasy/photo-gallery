@@ -1,7 +1,8 @@
 @import '../../config';
 
 #albums__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   background-color: $light-color;
-  height: 85vh;
-  margin: 0 5rem 0 5rem;
 }
