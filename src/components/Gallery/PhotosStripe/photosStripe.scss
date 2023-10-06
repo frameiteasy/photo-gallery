@@ -10,7 +10,7 @@ body {
   background-color: green;
   padding: 10px;
   align-content: center;
-  height: 90%;
+  height: 100%;
 }
 
 #gallerystripe__mini_picture {
@@ -19,7 +19,7 @@ body {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  max-height: 800px;
+  max-height: 100%;
   align-items: center;
   overflow-y: auto;
   overflow-x: hide;

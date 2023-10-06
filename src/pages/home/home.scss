@@ -14,34 +14,36 @@
 #home__content {
   background-color: rgb(2, 86, 114);
   width: 100%;
-  padding: 10px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
 
-  & #home__message {
-    display: flex;
-    flex-direction: column;
-    background-color: darkred;
-    width: 30%;
-    margin: auto;
+#home__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkred;
+  width: 30%;
 
-    & h1 {
-      font-size: 60px;
-      line-height: 1.2em;
-    }
-
-    & p {
-      padding-bottom: 20px;
-      line-height: 1.7em;
-    }
+  & h1 {
+    font-size: 60px;
+    line-height: 1.2em;
   }
 
-  & #home__album {
-    justify-content: center;
-    display: flex;
+  & p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
   }
+}
+
+#home__album {
+  display: flex;
+  justify-content: center;
 }
 
 .home__lead {
