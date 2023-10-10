@@ -1,7 +1,6 @@
 import albums from './albums.json';
 import { Photo } from '../gtypes/photo';
 import { Album } from '../gtypes/album';
-import { useState } from 'react';
 // TODO path doesn't work here
 // const path = require('path');
 
