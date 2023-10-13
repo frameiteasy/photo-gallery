@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './albumsCollection.scss';
 import AlbumTile from '../AlbumTile/AlbumTile';
-import { useAlbumCollection } from './useAlbumsCollextion';
+import { AlbumsContext } from '../../pages/context/AlbumsContext';
 
 const AlbumsCollection: React.FC = () => {
-  const { getAlbums, albums } = useAlbumCollection();
-
-  useEffect(() => {
-    console.log('useEffect');
-    getAlbums();
-  }, []);
-
-  console.log('albums', albums);
+  const { albums } = useContext(AlbumsContext);
 
   return (
     <div id="albumscollection__container">

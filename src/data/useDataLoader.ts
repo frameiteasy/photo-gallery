@@ -1,13 +1,14 @@
-import { useCallback, useState } from 'react';
-import { Album } from '../../gtypes/album';
-
+import { Dispatch, SetStateAction, useCallback } from 'react';
+import { Album } from '../gtypes/album';
 const albumsServer: string | undefined = process.env.REACT_APP_SERVER;
 
-export const useAlbumCollection = () => {
-  console.log('useAlbumCollection');
+type UseDataLoaderReturnType = {
+  getAlbums: () => void;
+};
 
-  const [albums, setAlbums] = useState<Album[]>([]);
-
+export const useDataLoader = (
+  setAlbums: Dispatch<SetStateAction<Album[]>>
+): UseDataLoaderReturnType => {
   const getAlbums = useCallback(async () => {
     try {
       const response = await fetch(`${albumsServer}/albums`, {
@@ -31,6 +32,5 @@ export const useAlbumCollection = () => {
 
   return {
     getAlbums,
-    albums,
   };
 };

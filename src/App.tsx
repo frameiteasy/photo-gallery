@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
+
 import Home from './pages/home/Home';
 import Albums from './pages/albums/Albums';
 import About from './pages/about/About';
@@ -10,7 +11,17 @@ import Gallery from './pages/gallery/Gallery';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+import { useDataLoader } from './data/useDataLoader';
+import { AlbumsContext } from './pages/context/AlbumsContext';
+
 function App() {
+  const { setAlbums } = useContext(AlbumsContext);
+  const { getAlbums } = useDataLoader(setAlbums);
+
+  useEffect(() => {
+    getAlbums();
+  }, []);
+
   return (
     <div id="app__background">
       <div id="app__container">
