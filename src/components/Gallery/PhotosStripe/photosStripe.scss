@@ -27,7 +27,8 @@ body {
 }
 
 .mini__picture {
-  width: 150px;
+  background: $mini-frame no-repeat center center / cover;
+  width: 192px;
   height: 80px;
   border: solid 1px;
   margin: 2px;
