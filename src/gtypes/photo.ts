@@ -3,6 +3,7 @@ import { z } from 'zod';
 export const aSchema = z.object({
   name: z.string().min(1),
   title: z.string().min(1),
+  url: z.string().min(1),
   description: z.string().optional(),
 });
 

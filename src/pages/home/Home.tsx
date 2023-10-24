@@ -1,10 +1,13 @@
 import React from 'react';
 import AlbumTile from '../../components/AlbumTile/AlbumTile';
 import { getHomePageAlbum } from '../../data/albums';
+import { useContext } from 'react';
+import { AlbumsContext } from '../context/AlbumsContext';
 import './home.scss';
 
 const Home: React.FC = () => {
-  let homePageAlbum = getHomePageAlbum();
+  const { albums } = useContext(AlbumsContext);
+  let homePageAlbum = getHomePageAlbum(albums);
   return (
     <div id="home__container">
       <div id="home__content">

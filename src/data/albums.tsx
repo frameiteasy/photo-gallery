@@ -7,7 +7,7 @@ import { Album } from '../gtypes/album';
 const albumsFolder: string | undefined = process.env.REACT_APP_ALBUM_FOLDER;
 const albumsServer: string | undefined = process.env.REACT_APP_SERVER;
 
-const searchHomeAlbum = () => {
+const searchHomeAlbum = (albums: Album[]) => {
   let foundAlbum = albums.find((album) => album.onHomePage);
   return foundAlbum;
 };
@@ -22,6 +22,7 @@ const emptyAlbum = () => {
     name: 'empty',
     title: 'empty',
     cover: 'empty',
+    url: 'empty',
     description: 'empty album',
     photos: '',
   };
@@ -48,10 +49,11 @@ export const getAlbums = () => {
   if there are no albums - leave empty
   if there are albums, but non of them with onHomePage=true, get a random one
 */
-export const getHomePageAlbum = () => {
+export const getHomePageAlbum = (albums: Album[]) => {
   if (albums.length > 0) {
-    let homeAlbum = searchHomeAlbum();
+    let homeAlbum = searchHomeAlbum(albums);
     if (homeAlbum !== undefined) {
+      console.log(homeAlbum);
       return homeAlbum;
     } else {
       return randomAlbum();
