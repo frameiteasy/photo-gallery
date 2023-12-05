@@ -13,7 +13,11 @@ const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
         key={iSetCurPhoto.photos[i].name}
         alt={iSetCurPhoto.photos[i].name}
         className="mini__picture"
-        src={'http://localhost:3001/photos' + '/' + iSetCurPhoto.photos[i].name}
+        src={
+          'http://localhost:3001/photos/small' +
+          '/' +
+          iSetCurPhoto.photos[i].name
+        }
         onClick={() => {
           iSetCurPhoto.setCurrentPhoto(i);
         }}

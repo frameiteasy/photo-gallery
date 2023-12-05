@@ -30,9 +30,7 @@ body {
   background: $mini-frame no-repeat center center / cover;
   width: 192px;
   height: 80px;
-  border: solid 1px;
-  margin: 2px;
-  flex-shrink: 0;
+
   justify-content: center center;
   object-fit: contain;
 }

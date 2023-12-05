@@ -15,7 +15,6 @@ const photosFolder: string | undefined = process.env.REACT_APP_PHOTOS_FOLDER;
 const AlbumTile: React.FC<Album> = (album: Album) => {
   const navigate = useNavigate();
   const galleryUrl = '/gallery/' + album.name;
-  console.log('galleryUrl', album);
 
   return (
     <div className="albumTile__wrapper" onClick={() => navigate(galleryUrl)}>
