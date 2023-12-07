@@ -9,19 +9,21 @@ const PhotosStripe: React.FC<ISetCurPhoto> = (iSetCurPhoto: ISetCurPhoto) => {
   //TODO map over all photos from the array
   for (let i in iSetCurPhoto.photos) {
     miniatures.push(
-      <img
-        key={iSetCurPhoto.photos[i].name}
-        alt={iSetCurPhoto.photos[i].name}
-        className="mini__picture"
-        src={
-          'http://localhost:3001/photos/small' +
-          '/' +
-          iSetCurPhoto.photos[i].name
-        }
-        onClick={() => {
-          iSetCurPhoto.setCurrentPhoto(i);
-        }}
-      ></img>
+      <div className="mini_picture_frame">
+        <img
+          key={iSetCurPhoto.photos[i].name}
+          alt={iSetCurPhoto.photos[i].name}
+          className="mini__picture"
+          src={
+            'http://localhost:3001/photos/small' +
+            '/' +
+            iSetCurPhoto.photos[i].name
+          }
+          onClick={() => {
+            iSetCurPhoto.setCurrentPhoto(i);
+          }}
+        ></img>
+      </div>
     );
   }
   return (

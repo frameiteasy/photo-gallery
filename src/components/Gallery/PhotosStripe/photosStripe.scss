@@ -26,10 +26,18 @@ body {
   flex-wrap: nowrap;
 }
 
-.mini__picture {
+.mini_picture_frame {
   background: $mini-frame no-repeat center center / cover;
+  border: 1px solid darkblue;
   width: 192px;
-  height: 80px;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini__picture {
+  width: 120px;
 
   justify-content: center center;
   object-fit: contain;
