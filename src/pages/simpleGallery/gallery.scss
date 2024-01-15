@@ -1,0 +1,10 @@
+@import '../../config';
+
+#gallery__container {
+  background-color: lightcyan;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}

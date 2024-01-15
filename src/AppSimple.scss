@@ -1,0 +1,61 @@
+@import 'config';
+@import 'utilities';
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+// full screen
+#app__background {
+  display: flex;
+  background: $bg-image no-repeat center center / cover;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+// full screen
+#app__container {
+  // background-color: pink;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: $page-width;
+}
+
+#page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-color: pink;
+  width: $page-width;
+  flex-grow: 1;
+  margin: auto;
+}
